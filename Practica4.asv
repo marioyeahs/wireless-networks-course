@@ -37,14 +37,12 @@ ylabel('Normalized velocity (m/s)')
 
 figure(5)
 histogram(norm_mag_vel.*2,10)
-title("Normalized magnitude velocity")
+title("")
 
 figure(6)
 subplot(2,1,1)
 plot(time,raylpdf(norm_mag_vel))
-title('pdf')
 subplot(2,1,2)
 plot(time,raylcdf(norm_mag_vel))
-title('cdf')
 
 
